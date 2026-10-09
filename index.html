@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emirates Motor Enclave | The Grand Seven Emirates Garage | كراج الإمارات السبع الكبير</title>
+<meta name="description" content="Mobile car workshop across the UAE. Mechanical, electrical, AC and auto transmission repair at your door. Elite Membership valid in all seven emirates. ورشة سيارات متنقلة في جميع أنحاء الإمارات.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000;
+  --coal:#080706;
+  --panel:#0e0c09;
+  --line:#3a2f17;
+  --gold:#d4af37;
+  --gold-hi:#f6e27a;
+  --gold-lo:#8c6a1c;
+  --ivory:#f3ead3;
+  --mute:#a99c7c;
+  --grad:linear-gradient(135deg,#8c6a1c 0%,#e9c85a 28%,#fff0a8 50%,#d4af37 72%,#8c6a1c 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{overflow-x:hidden;background:var(--black);color:var(--ivory);font-family:'Manrope',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+/* bilingual: English main, Arabic smaller underneath */
+.ar{display:block;font-family:'Cairo',sans-serif;direction:rtl;font-size:.78em;color:var(--mute);line-height:1.5;font-weight:500;text-align:center}
+.en{display:block}
+.gold{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0;position:relative}
+.sec-head{text-align:center;margin-bottom:46px}
+.sec-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.4vw,3.1rem);font-weight:600;line-height:1.15}
+.sec-head h2 .ar{font-size:.5em;margin-top:6px}
+.sec-head p{max-width:620px;margin:14px auto 0;color:var(--mute)}
+.sec-head p .ar{margin-top:2px}
+.rule{width:140px;height:1px;margin:22px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+/* buttons */
+.btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--gold);padding:12px 28px;border-radius:2px;cursor:pointer;font-weight:700;letter-spacing:.02em;transition:background .2s,color .2s,box-shadow .2s;background:transparent;color:var(--gold-hi);min-height:52px}
+.btn .ar{color:inherit;opacity:.8;font-size:.78em}
+.btn:hover{background:rgba(212,175,55,.12)}
+.btn.solid{background:var(--grad);color:#1a1204;border-color:#d4af37}
+.btn.solid:hover{box-shadow:0 0 28px rgba(212,175,55,.35)}
+.btn[disabled]{opacity:.35;cursor:not-allowed}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;line-height:1.1;display:block}
+.brand .ar{font-size:.72rem;text-align:start}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{font-size:.88rem;font-weight:600;display:block;text-align:center;padding:4px 0}
+nav a .ar{font-size:.8em}
+nav a:hover .en{color:var(--gold-hi)}
+.nav .btn{min-height:44px;padding:6px 20px;font-size:.9rem;white-space:nowrap}
+@media(max-width:900px){nav{display:none}}
+@media(max-width:480px){.brand .ar{display:none}.brand b{font-size:1.05rem}.brand svg{width:34px;height:34px}.nav .btn{padding:4px 12px;font-size:.82rem}.fab{padding:8px 16px;font-size:.82rem;right:12px;bottom:12px}}
+
+/* hero */
+.hero{position:relative;padding:70px 0 90px;overflow:hidden;text-align:center;background:radial-gradient(ellipse at 50% 0%,#1c1506 0%,#000 62%)}
+.hero .mark{position:absolute;left:50%;top:48%;width:min(900px,120vw);transform:translate(-50%,-50%);opacity:.09;pointer-events:none}
+.hero .inner{position:relative}
+.kicker{color:var(--gold);font-weight:600;font-size:.95rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.6rem,7.4vw,5.6rem);line-height:1.04;margin:18px auto 0;max-width:15ch}
+.hero h1 .ar{font-size:.34em;margin-top:12px;font-weight:600}
+.hero .tag{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);margin-top:22px;color:var(--ivory)}
+.hero .tag .ar{font-size:.6em}
+.hero p.lead{max-width:640px;margin:20px auto 0;color:var(--mute)}
+.hero p.lead .ar{margin-top:6px;font-size:.86em}
+.hero h1 .ar{color:#cdb36b}
+.hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+
+/* four service tabs */
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:62px;border:1px solid var(--line);background:var(--panel);position:relative}
+.tab{padding:34px 20px 30px;text-align:center;border-left:1px solid var(--line);cursor:pointer;background:transparent;border-top:0;border-right:0;border-bottom:0;transition:background .25s;display:flex;flex-direction:column;align-items:center}
+.tab:first-child{border-left:0}
+.tab:hover{background:#17120a}
+.tab svg{width:46px;height:46px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.tab h3{font-family:'Cormorant Garamond',serif;font-size:1.55rem;line-height:1.15;font-weight:600}
+.tab h3 .ar{font-size:.58em;margin-top:3px}
+.tab p{font-size:.88rem;color:var(--mute);margin-top:12px}
+.tab p .ar{font-size:.9em}
+.tab .go{margin-top:18px;color:var(--gold-hi);font-size:.85rem;font-weight:700}
+.tab .go .ar{color:var(--gold);font-size:.9em}
+@media(max-width:980px){.tabs{grid-template-columns:repeat(2,1fr)}.tab:nth-child(3){border-left:0}.tab:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:560px){.tabs{grid-template-columns:1fr}.tab{border-left:0!important}.tab:nth-child(n+2){border-top:1px solid var(--line)}}
+
+/* promise strip */
+.promise{padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--coal)}
+.promise .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.promise .item{padding:30px 20px;text-align:center;border-left:1px solid var(--line)}
+.promise .item:first-child{border-left:0}
+.promise b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;line-height:1.2;display:block}
+.promise b .ar{font-size:.62em}
+.promise p{font-size:.85rem;color:var(--mute);margin-top:8px}
+@media(max-width:900px){.promise .grid{grid-template-columns:repeat(2,1fr)}.promise .item:nth-child(3){border-left:0}.promise .item:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:520px){.promise .grid{grid-template-columns:1fr}.promise .item{border-left:0!important}.promise .item:nth-child(n+2){border-top:1px solid var(--line)}}
+
+/* booking */
+#book{background:linear-gradient(#000,#0a0805 50%,#000)}
+.bk{max-width:860px;margin:0 auto;border:1px solid var(--line);background:var(--panel)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.steps div{padding:14px 6px;text-align:center;font-size:.82rem;font-weight:600;color:var(--mute);border-bottom:2px solid transparent;margin-bottom:-1px}
+.steps div .ar{font-size:.85em}
+.steps div.on{color:var(--gold-hi);border-bottom-color:var(--gold)}
+.steps div.done{color:var(--ivory)}
+.pane{padding:30px 28px 34px}
+.pane h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;text-align:center;font-weight:600;line-height:1.2}
+.pane h3 .ar{font-size:.55em;margin-top:2px}
+.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+.opt{border:1px solid var(--line);background:#050403;padding:18px 14px;cursor:pointer;text-align:center;font-weight:600;transition:border-color .2s,background .2s;display:flex;flex-direction:column;align-items:center}
+.opt:hover{border-color:var(--gold-lo)}
+.opt.sel{border-color:var(--gold);background:#1a1407;color:var(--gold-hi)}
+.search{width:100%;margin-top:22px;background:#050403;border:1px solid var(--line);padding:14px 16px;border-radius:0}
+.search:focus,.field:focus{border-color:var(--gold);outline:none}
+.brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px;margin-top:16px;max-height:340px;overflow-y:auto;padding:2px}
+.brands .opt{padding:12px 8px;font-size:.9rem}
+.brands .opt .ar{font-size:.85em}
+.grp{grid-column:1/-1;color:var(--gold);font-size:.82rem;font-weight:700;margin-top:8px;display:flex;gap:8px;align-items:baseline}
+.grp .ar{display:inline;font-size:.95em;color:var(--gold-lo)}
+.none{grid-column:1/-1;text-align:center;color:var(--mute);padding:18px}
+.field{width:100%;background:#050403;border:1px solid var(--line);padding:13px 14px;border-radius:0}
+.lbl{display:block;margin-top:18px;font-size:.84rem;font-weight:600;color:var(--ivory)}
+.lbl .ar{display:inline;font-size:.95em;margin-inline-start:6px;color:var(--mute)}
+.row{display:flex;justify-content:space-between;gap:12px;margin-top:28px;flex-wrap:wrap}
+.days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;margin-top:22px}
+.day{flex:none;width:76px;border:1px solid var(--line);background:#050403;padding:10px 4px;text-align:center;cursor:pointer;line-height:1.3}
+.day small{display:block;color:var(--mute);font-size:.72rem}
+.day b{font-size:1.25rem;font-family:'Cormorant Garamond',serif}
+.day.sel{border-color:var(--gold);background:#1a1407}
+.day.sel small,.day.sel b{color:var(--gold-hi)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:10px}
+.slot{border:1px solid var(--line);background:#050403;padding:11px 6px;text-align:center;cursor:pointer;font-weight:600;font-size:.9rem}
+.slot:hover{border-color:var(--gold-lo)}
+.slot.sel{border-color:var(--gold);background:var(--grad);color:#1a1204}
+.slot.off{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+.note{font-size:.8rem;color:var(--mute);text-align:center;margin-top:14px}
+.sum{border:1px solid var(--line);background:#050403;padding:14px 16px;margin-top:20px;font-size:.88rem;color:var(--mute)}
+.sum b{color:var(--ivory)}
+.err{color:#ff9d8a;font-size:.84rem;margin-top:12px;text-align:center;min-height:1.2em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.two{grid-template-columns:1fr}.pane{padding:24px 16px 28px}.opts{grid-template-columns:1fr}.steps div{font-size:.7rem}}
+
+/* contact */
+.contact .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto}
+.call{border:1px solid var(--line);background:var(--panel);padding:32px 22px;text-align:center}
+.call .num{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3.4vw,2.1rem);font-weight:700;display:block;direction:ltr;margin:6px 0 18px}
+.call .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.call .btn{min-height:46px;padding:8px 20px;font-size:.88rem}
+@media(max-width:700px){.contact .cards{grid-template-columns:1fr}}
+
+/* membership */
+#membership{background:radial-gradient(ellipse at 50% 30%,#1c1506,#000 70%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card3d{max-width:520px;margin:0 auto 46px;aspect-ratio:1.586;border-radius:18px;padding:28px 30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#17110a,#050403 55%,#1b1407);border:1px solid var(--gold);box-shadow:0 0 60px rgba(212,175,55,.16),inset 0 0 0 6px #000,inset 0 0 0 7px #4a3a16}
+.card3d .top{display:flex;justify-content:space-between;align-items:flex-start}
+.card3d .top svg{width:46px;height:46px}
+.card3d .nm{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,5vw,2.5rem);font-weight:700;line-height:1}
+.card3d .nm .ar{text-align:left;font-size:.45em;margin-top:6px}
+.card3d .bot{font-size:.78rem;color:var(--mute);display:flex;justify-content:space-between;align-items:flex-end}
+.card3d .emv{width:44px;height:32px;border-radius:6px;background:var(--grad);opacity:.9}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+.perk{border:1px solid var(--line);background:rgba(14,12,9,.8);padding:24px 20px;text-align:center}
+.perk b{display:block;font-size:1.02rem;line-height:1.35}
+.perk b .ar{font-size:.82em;margin-top:2px}
+.perk p{color:var(--mute);font-size:.86rem;margin-top:10px}
+.perk p .ar{font-size:.95em}
+.perk.big{border-color:var(--gold)}
+.mem-cta{text-align:center;margin-top:44px}
+.mem-cta .btn{padding:16px 44px}
+.mem-cta p{margin-top:14px;font-size:.84rem;color:var(--mute)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:64px auto 0}
+.plan{border-top:2px solid var(--gold);background:var(--panel);padding:26px 22px 28px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.plan .big{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;line-height:1.05}
+.plan .big .ar{font-size:.4em;margin-top:4px}
+.plan h3{font-size:1.05rem;margin-top:8px}
+.plan h3 .ar{font-size:.85em}
+.plan p{color:var(--mute);font-size:.86rem;margin:10px 0 20px}
+.plan p .ar{font-size:.95em}
+.plan .btn{margin-top:auto;min-height:46px;padding:8px 22px;font-size:.88rem}
+@media(max-width:900px){.perks,.plans{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.perks,.plans{grid-template-columns:1fr}}
+
+/* how */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:960px;margin:0 auto}
+.hstep{text-align:center;padding:0 24px;position:relative}
+.hstep .n{width:58px;height:58px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;background:#000;position:relative;z-index:1}
+.hstep:not(:last-child)::after{content:"";position:absolute;top:29px;left:calc(50% + 40px);width:calc(100% - 80px);height:1px;background:var(--line)}
+.hstep b{display:block;font-size:1.05rem}
+.hstep p{color:var(--mute);font-size:.88rem;margin-top:8px}
+@media(max-width:760px){.how{grid-template-columns:1fr;gap:34px}.hstep:not(:last-child)::after{display:none}}
+
+/* luxury + coverage */
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:960px;margin:0 auto}
+.chip{border:1px solid var(--line);padding:9px 18px;font-weight:600;font-size:.92rem;background:var(--panel);text-align:center}
+.chip .ar{font-size:.8em}
+.chip.g{border-color:var(--gold-lo)}
+#luxury{background:var(--coal);border-top:1px solid var(--line)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:46px 0 100px;text-align:center;background:#000}
+footer .serif{font-size:1.6rem}
+footer .ar{font-size:.85rem}
+footer .nums{margin-top:16px;color:var(--mute);direction:ltr;font-size:.92rem}
+footer small{display:block;margin-top:22px;color:#6f6448;font-size:.78rem}
+
+/* floating whatsapp */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--grad);color:#1a1204;font-weight:700;padding:11px 22px;border-radius:40px;box-shadow:0 8px 30px rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;line-height:1.2;font-size:.9rem}
+.fab .ar{color:#3a2a08;font-size:.78em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Emirates Motor Enclave">
+      <span data-star="40"></span>
+      <span><b class="gold">Emirates Motor Enclave</b><span class="ar">إمارات موتور إنكليف</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services"><span class="en">Services</span><span class="ar">الخدمات</span></a></li>
+        <li><a href="#book"><span class="en">Book</span><span class="ar">احجز</span></a></li>
+        <li><a href="#membership"><span class="en">Membership</span><span class="ar">العضوية</span></a></li>
+        <li><a href="#contact"><span class="en">Contact</span><span class="ar">تواصل معنا</span></a></li>
+      </ul>
+    </nav>
+    <a class="btn solid" href="#book"><span class="en">Book Now</span><span class="ar">احجز الآن</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<div class="hero">
+  <span class="mark" data-star="900" data-stroke="0.45" aria-hidden="true"></span>
+  <div class="wrap inner">
+    <div class="kicker"><span class="en">Mobile auto workshop in all seven emirates</span><span class="ar">ورشة سيارات متنقلة في الإمارات السبع</span></div>
+    <h1 class="gold"><span class="en">The Grand Seven Emirates Garage</span><span class="ar">كراج الإمارات السبع الكبير</span></h1>
+    <div class="tag"><span class="en">At Your Service, At Your Door</span><span class="ar">في خدمتك، عند بابك</span></div>
+    <p class="lead"><span class="en">Full mechanical, electrical, AC and auto transmission repair for every car running in the UAE. We come to your home, office or parking.</span><span class="ar">صيانة ميكانيكية وكهربائية وتكييف وناقل حركة أوتوماتيك لجميع السيارات في الإمارات. نأتيك إلى بيتك أو مكتبك أو موقف سيارتك.</span></p>
+    <div class="cta">
+      <a class="btn solid" href="#book"><span class="en">Book a Service</span><span class="ar">احجز خدمة</span></a>
+      <a class="btn" data-wa="Hello Emirates Motor Enclave, I need help with my car."><span class="en">Chat on WhatsApp</span><span class="ar">تواصل عبر واتساب</span></a>
+    </div>
+
+    <!-- four main service tabs -->
+    <div class="tabs" id="services" role="list"></div>
+  </div>
+</div>
+
+<!-- PROMISE -->
+<section class="promise" aria-label="Our promise">
+  <div class="wrap grid">
+    <div class="item"><b class="gold"><span class="en">Lowest Prices in the UAE</span><span class="ar">أقل الأسعار في الإمارات</span></b><p><span class="en">Find a lower price anywhere in the UAE and challenge us.</span><span class="ar">إذا وجدت سعرًا أقل في أي مكان في الإمارات، تحدّنا.</span></p></div>
+    <div class="item"><b class="gold"><span class="en">Fastest Service</span><span class="ar">أسرع خدمة</span></b><p><span class="en">Quick booking, quick arrival, quick repair.</span><span class="ar">حجز سريع ووصول سريع وإصلاح سريع.</span></p></div>
+    <div class="item"><b class="gold"><span class="en">Guarantee on Every Job</span><span class="ar">ضمان على كل عمل</span></b><p><span class="en">A problem during the guarantee period? We fix it free, at your door.</span><span class="ar">ظهرت مشكلة خلال فترة الضمان؟ نصلحها مجانًا عند بابك.</span></p></div>
+    <div class="item"><b class="gold"><span class="en">We Come to You</span><span class="ar">نأتي إليك</span></b><p><span class="en">Home, office or car porch. No tow truck, no waiting room.</span><span class="ar">البيت أو المكتب أو موقف السيارة. بدون سطحة وبدون انتظار.</span></p></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">Book Your Appointment</span><span class="ar">احجز موعدك</span></h2>
+      <div class="rule"></div>
+      <p><span class="en">Choose a service, find your car, pick a day and time. Takes about a minute.</span><span class="ar">اختر الخدمة، ثم سيارتك، ثم اليوم والوقت. تستغرق دقيقة تقريبًا.</span></p>
+    </div>
+    <div class="bk" id="bk"></div>
+  </div>
+</section>
+
+<!-- TALK TO US -->
+<section class="contact" id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">Talk to Our Customer Service Directly</span><span class="ar">تحدث مع خدمة العملاء مباشرة</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cards">
+      <div class="call">
+        <span class="en">UAE line</span><span class="ar">خط الإمارات</span>
+        <span class="num gold">+971 52 965 9615</span>
+        <div class="btns">
+          <a class="btn solid" href="tel:+971529659615"><span class="en">Call</span><span class="ar">اتصل</span></a>
+          <a class="btn" data-wa="Hello Emirates Motor Enclave, I would like to talk to customer service." data-num="971529659615"><span class="en">WhatsApp</span><span class="ar">واتساب</span></a>
+        </div>
+      </div>
+      <div class="call">
+        <span class="en">Customer service line</span><span class="ar">خط خدمة العملاء</span>
+        <span class="num gold">+92 346 2452233</span>
+        <div class="btns">
+          <a class="btn solid" href="tel:+923462452233"><span class="en">Call</span><span class="ar">اتصل</span></a>
+          <a class="btn" data-wa="Hello Emirates Motor Enclave, I would like to talk to customer service." data-num="923462452233"><span class="en">WhatsApp</span><span class="ar">واتساب</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="membership">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">The Elite Membership</span><span class="ar">العضوية النخبة</span></h2>
+      <div class="rule"></div>
+      <p><span class="en">One card, every emirate. Join in any city and get your car fixed at our workshops anywhere in the UAE.</span><span class="ar">بطاقة واحدة لكل الإمارات. اشترك في أي مدينة وأصلح سيارتك في ورشنا في أي مكان في الإمارات.</span></p>
+    </div>
+
+    <div class="card3d" aria-label="Elite Membership card">
+      <div class="top">
+        <div class="nm gold"><span class="en">Elite</span><span class="ar">النخبة</span></div>
+        <span data-star="46"></span>
+      </div>
+      <div class="emv"></div>
+      <div class="bot"><span>Emirates Motor Enclave<br>إمارات موتور إنكليف</span><span style="text-align:right">All 7 Emirates<br>الإمارات السبع</span></div>
+    </div>
+
+    <div class="perks">
+      <div class="perk big"><b class="gold"><span class="en">Use it in every emirate</span><span class="ar">استخدمها في كل إمارة</span></b><p><span class="en">Sign up in Dubai, get served in Abu Dhabi, Sharjah or anywhere else. Just show your card.</span><span class="ar">اشترك في دبي واحصل على الخدمة في أبوظبي أو الشارقة أو أي مكان. فقط أظهر بطاقتك.</span></p></div>
+      <div class="perk"><b><span class="en">Priority booking</span><span class="ar">أولوية في الحجز</span></b><p><span class="en">Members are served first, even on busy days.</span><span class="ar">الأعضاء يُخدمون أولًا حتى في أيام الازدحام.</span></p></div>
+      <div class="perk"><b><span class="en">Discounted labour</span><span class="ar">خصم على أجور العمل</span></b><p><span class="en">Lower workshop charges on every visit.</span><span class="ar">أجور أقل في كل زيارة.</span></p></div>
+      <div class="perk"><b><span class="en">Free yearly inspection</span><span class="ar">فحص سنوي مجاني</span></b><p><span class="en">A full check of your car once a year.</span><span class="ar">فحص شامل لسيارتك مرة كل سنة.</span></p></div>
+      <div class="perk"><b><span class="en">Roadside help</span><span class="ar">مساعدة على الطريق</span></b><p><span class="en">Stuck on the road? Call us and we come to you.</span><span class="ar">تعطلت سيارتك على الطريق؟ اتصل بنا ونأتيك.</span></p></div>
+      <div class="perk"><b><span class="en">Door-to-door repair</span><span class="ar">إصلاح عند الباب</span></b><p><span class="en">Our technicians repair your car at your home or office.</span><span class="ar">فنيونا يصلحون سيارتك في بيتك أو مكتبك.</span></p></div>
+    </div>
+
+    <div class="mem-cta">
+      <a class="btn solid" data-wa="I want to buy your elite membership."><span class="en">Get the Elite Membership</span><span class="ar">احصل على العضوية النخبة</span></a>
+      <p><span class="en">You will chat with our customer service team on WhatsApp to complete your membership.</span><span class="ar">ستتحدث مع فريق خدمة العملاء على واتساب لإتمام اشتراكك.</span></p>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <div class="big gold"><span class="en">Up to 60% off</span><span class="ar">خصم حتى 60%</span></div>
+        <h3><span class="en">Fleet and Company Plans</span><span class="ar">باقات الأساطيل والشركات</span></h3>
+        <p><span class="en">Managing more than 10 vehicles? Keep the whole fleet running at a fraction of the cost.</span><span class="ar">تدير أكثر من 10 مركبات؟ حافظ على أسطولك بتكلفة أقل بكثير.</span></p>
+        <a class="btn" data-wa="Hello, I want to know about your fleet and company plan (more than 10 vehicles)."><span class="en">Ask about fleet plans</span><span class="ar">اسأل عن باقة الأساطيل</span></a>
+      </div>
+      <div class="plan">
+        <div class="big gold"><span class="en">30% off, for both</span><span class="ar">خصم 30% للاثنين</span></div>
+        <h3><span class="en">Refer a Friend</span><span class="ar">رشّح صديقًا</span></h3>
+        <p><span class="en">Send someone to us. When they join, you and your friend each get 30% off.</span><span class="ar">رشّح لنا شخصًا. عند اشتراكه تحصل أنت وصديقك على خصم 30% لكل منكما.</span></p>
+        <a class="btn" data-wa="Hello, I want to refer a friend and get the 30% discount."><span class="en">Refer someone</span><span class="ar">رشّح شخصًا</span></a>
+      </div>
+      <div class="plan">
+        <div class="big gold"><span class="en">More than one car</span><span class="ar">أكثر من سيارة</span></div>
+        <h3><span class="en">Family Plans</span><span class="ar">باقات العائلة</span></h3>
+        <p><span class="en">One membership for the whole household. Cover every car your family drives.</span><span class="ar">عضوية واحدة لكل الأسرة. غطِّ جميع السيارات التي تقودها عائلتك.</span></p>
+        <a class="btn" data-wa="Hello, I want to know about your family membership plan."><span class="en">Ask about family plans</span><span class="ar">اسأل عن باقة العائلة</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">How It Works</span><span class="ar">كيف تعمل الخدمة</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="how">
+      <div class="hstep"><div class="n gold">1</div><b><span class="en">Choose your service</span><span class="ar">اختر الخدمة</span></b><p><span class="en">Pick your car brand and a time that suits you.</span><span class="ar">اختر ماركة سيارتك والوقت المناسب لك.</span></p></div>
+      <div class="hstep"><div class="n gold">2</div><b><span class="en">We arrive at your door</span><span class="ar">نصل إلى بابك</span></b><p><span class="en">Our technician comes with the tools and parts.</span><span class="ar">يصلك الفني بالمعدات وقطع الغيار.</span></p></div>
+      <div class="hstep"><div class="n gold">3</div><b><span class="en">Your car is fixed</span><span class="ar">تُصلح سيارتك</span></b><p><span class="en">You get a guarantee on the work we do.</span><span class="ar">تحصل على ضمان على العمل الذي ننفذه.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LUXURY -->
+<section id="luxury">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">Luxury Car Specialists</span><span class="ar">متخصصون في السيارات الفاخرة</span></h2>
+      <div class="rule"></div>
+      <p><span class="en">We repair every make and model on UAE roads, and we are specialists in the finest names.</span><span class="ar">نصلح جميع الماركات والموديلات في الإمارات، ونتخصص في أرقى الأسماء.</span></p>
+    </div>
+    <div class="chips" id="luxChips"></div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="gold"><span class="en">All Seven Emirates</span><span class="ar">الإمارات السبع</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="chips" id="emChips"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="serif gold">The Grand Seven Emirates Garage</div>
+    <div class="ar" style="margin-top:2px">كراج الإمارات السبع الكبير</div>
+    <div style="margin-top:12px"><span class="en">At Your Service, At Your Door</span><span class="ar">في خدمتك، عند بابك</span></div>
+    <div class="nums">+971 52 965 9615 &nbsp;|&nbsp; +92 346 2452233</div>
+    <small>EmiratesMotorEnclave.com &copy; <span id="yr"></span> Emirates Motor Enclave</small>
+  </div>
+</footer>
+
+<a class="fab" data-wa="Hello Emirates Motor Enclave, I need help with my car."><span class="en">WhatsApp</span><span class="ar">واتساب</span></a>
+
+<script>
+/* ============ SETTINGS: edit these ============ */
+var WHATSAPP = "971529659615";          // main WhatsApp number (no + or spaces)
+var OPEN_HOUR = 8, CLOSE_HOUR = 20;     // first and last appointment start (24h)
+var DAYS_AHEAD = 14;                    // how many days customers can book
+var CLOSED_WEEKDAYS = [];               // e.g. [5] closes Fridays (0=Sun ... 6=Sat)
+var BOOKED = {};                        // mark taken slots, e.g. {"2026-10-15":["10:00","11:00"]}
+/* ================================================ */
+
+var SERVICES = [
+  {id:"mech", en:"Mechanical Work", ar:"الأعمال الميكانيكية", d_en:"Engine, brakes, suspension, steering, oil change and every mechanical repair.", d_ar:"المحرك والفرامل والتعليق والمقود وتغيير الزيت وكل الإصلاحات الميكانيكية.",
+   icon:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>'},
+  {id:"elec", en:"Electrical Work", ar:"الأعمال الكهربائية", d_en:"Wiring, battery, alternator, sensors, lights and computer diagnostics.", d_ar:"الأسلاك والبطارية والدينامو والحساسات والإنارة وفحص الكمبيوتر.",
+   icon:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>'},
+  {id:"ac", en:"AC Service and Repair", ar:"صيانة وإصلاح التكييف", d_en:"Gas refill, compressor, cooling and leak repair. Stay cool in the UAE heat.", d_ar:"تعبئة الفريون والكمبروسر وإصلاح التسريب. ابقَ باردًا في حرّ الإمارات.",
+   icon:'<path d="M12 2v20M4.2 7l15.6 10M4.2 17 19.8 7M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/>'},
+  {id:"trans", en:"Auto Transmission Repair", ar:"إصلاح ناقل الحركة الأوتوماتيك (القير)", d_en:"Gearbox service, repair and fluid change for all automatic cars.", d_ar:"صيانة وإصلاح القير الأوتوماتيك وتغيير زيت القير لجميع السيارات.",
+   icon:'<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" stroke-width="3" stroke-dasharray="3.1 3.1"/><circle cx="12" cy="12" r="6"/>'}
+];
+
+var LUXURY = [
+ ["Mercedes-Benz","مرسيدس بنز"],["BMW","بي إم دبليو"],["Audi","أودي"],["Porsche","بورشه"],["Range Rover","رينج روفر"],["Land Rover","لاند روفر"],
+ ["Bentley","بنتلي"],["Rolls-Royce","رولز رويس"],["Lamborghini","لامبورغيني"],["Ferrari","فيراري"],["Maserati","مازيراتي"],["McLaren","مكلارين"],
+ ["Aston Martin","أستون مارتن"],["Bugatti","بوغاتي"],["Lexus","لكزس"],["Jaguar","جاغوار"],["Cadillac","كاديلاك"],["Genesis","جينيسيس"],
+ ["Infiniti","إنفينيتي"],["Volvo","فولفو"],["Lotus","لوتس"],["Alfa Romeo","ألفا روميو"],["MINI","ميني"],["Tesla","تسلا"]
+];
+var OTHERS = [
+ ["Toyota","تويوتا"],["Nissan","نيسان"],["Honda","هوندا"],["Hyundai","هيونداي"],["Kia","كيا"],["Mitsubishi","ميتسوبيشي"],["Mazda","مازدا"],
+ ["Ford","فورد"],["Chevrolet","شيفروليه"],["GMC","جي إم سي"],["Jeep","جيب"],["Dodge","دودج"],["Chrysler","كرايسلر"],["Suzuki","سوزوكي"],
+ ["Subaru","سوبارو"],["Volkswagen","فولكسفاغن"],["Peugeot","بيجو"],["Renault","رينو"],["MG","إم جي"],["Chery","شيري"],["Geely","جيلي"],
+ ["Haval","هافال"],["GAC","جي أيه سي"],["BYD","بي واي دي"],["Isuzu","إيسوزو"],["Other brand","ماركة أخرى"]
+];
+var EMIRATES = [["Abu Dhabi","أبوظبي"],["Dubai","دبي"],["Sharjah","الشارقة"],["Ajman","عجمان"],["Umm Al Quwain","أم القيوين"],["Ras Al Khaimah","رأس الخيمة"],["Fujairah","الفجيرة"]];
+
+/* ---- helpers ---- */
+function $(s,r){return (r||document).querySelector(s)}
+function bi(en,ar,cls){return '<span class="en">'+en+'</span><span class="ar">'+ar+'</span>'}
+function waLink(msg,num){return "https://wa.me/"+(num||WHATSAPP)+"?text="+encodeURIComponent(msg)}
+
+/* seven-pointed star: the seven emirates */
+function star(size,stroke){
+  var cx=50,cy=50,r=44,pts=[];
+  for(var i=0;i<7;i++){var a=(-90+i*360/7)*Math.PI/180;pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}
+  var d="",k=0;
+  for(var j=0;j<7;j++){var p=pts[k];d+=(j?"L":"M")+p[0].toFixed(2)+" "+p[1].toFixed(2);k=(k+3)%7}
+  d+="Z";
+  var id="g"+Math.random().toString(36).slice(2,7);
+  return '<svg viewBox="0 0 100 100" width="'+size+'" height="'+size+'" fill="none" stroke="url(#'+id+')" stroke-width="'+(stroke||2)+'" stroke-linejoin="round">'
+   +'<defs><linearGradient id="'+id+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8c6a1c"/><stop offset=".5" stop-color="#fff0a8"/><stop offset="1" stop-color="#d4af37"/></linearGradient></defs>'
+   +'<circle cx="50" cy="50" r="47"/><path d="'+d+'"/><circle cx="50" cy="50" r="11"/></svg>';
+}
+document.querySelectorAll("[data-star]").forEach(function(el){
+  var s=+el.getAttribute("data-star"),st=+(el.getAttribute("data-stroke")||(s>100?1.2:3));
+  el.innerHTML=star(s,st);
+  if(s>100){el.firstChild.style.width="100%";el.firstChild.style.height="auto"}
+});
+$("#yr").textContent=new Date().getFullYear();
+/* hide the floating WhatsApp button while the booking form is on screen so it never covers the buttons */
+(function(){
+  var fab=$(".fab"),bsec=$("#book");
+  if(!fab||!bsec||!("IntersectionObserver" in window))return;
+  new IntersectionObserver(function(en){fab.style.display=en[0].isIntersecting?"none":"flex"},{threshold:0.05}).observe(bsec);
+})();
+
+/* WhatsApp buttons */
+document.querySelectorAll("[data-wa]").forEach(function(a){
+  a.href=waLink(a.getAttribute("data-wa"),a.getAttribute("data-num"));a.target="_blank";a.rel="noopener";
+});
+
+/* chips */
+$("#luxChips").innerHTML=LUXURY.map(function(b){return '<div class="chip g">'+bi(b[0],b[1])+'</div>'}).join("");
+$("#emChips").innerHTML=EMIRATES.map(function(b){return '<div class="chip">'+bi(b[0],b[1])+'</div>'}).join("");
+
+/* four service tabs on the home page */
+$("#services").innerHTML=SERVICES.map(function(s){
+  return '<button class="tab" data-svc="'+s.id+'" role="listitem">'
+   +'<svg viewBox="0 0 24 24" aria-hidden="true">'+s.icon+'</svg>'
+   +'<h3>'+bi(s.en,s.ar)+'</h3>'
+   +'<p>'+bi(s.d_en,s.d_ar)+'</p>'
+   +'<span class="go">'+bi("Book this service","احجز هذه الخدمة")+'</span></button>';
+}).join("");
+document.querySelectorAll(".tab").forEach(function(t){
+  t.addEventListener("click",function(){
+    st.service=t.getAttribute("data-svc");st.step=2;render();
+    $("#book").scrollIntoView({behavior:"smooth"});
+  });
+});
+
+/* ================= BOOKING ================= */
+var st={step:1,service:null,brand:null,model:"",date:null,time:null,asap:false,q:""};
+var bk=$("#bk");
+function svc(id){return SERVICES.filter(function(s){return s.id===id})[0]}
+
+function uaeNow(){
+  try{
+    var o={};
+    new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Dubai",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date()).forEach(function(x){o[x.type]=x.value});
+    var h=+o.hour;if(h===24)h=0;
+    return new Date(+o.year,+o.month-1,+o.day,h,+o.minute);
+  }catch(e){return new Date()}
+}
+function slotOff(dateKey,hr,now){
+  var taken=BOOKED[dateKey]||[];
+  if(taken.indexOf(("0"+hr).slice(-2)+":00")>-1)return true;
+  if(dateKey===ymd(now)&&hr<=now.getHours()+1)return true;
+  return false;
+}
+function dayHasSlot(d,now){
+  for(var hr=OPEN_HOUR;hr<=CLOSE_HOUR;hr++){if(!slotOff(ymd(d),hr,now))return true}
+  return false;
+}
+function ymd(d){return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function fmt(h){var ap=h>=12?"PM":"AM",x=h%12||12;return x+":00 "+ap}
+function dayList(){
+  var out=[],n=uaeNow();
+  for(var i=0;i<DAYS_AHEAD;i++){
+    var d=new Date(n.getFullYear(),n.getMonth(),n.getDate()+i);
+    if(CLOSED_WEEKDAYS.indexOf(d.getDay())>-1)continue;
+    out.push(d);
+  }
+  return out;
+}
+
+function stepsBar(){
+  var names=[["Service","الخدمة"],["Car","السيارة"],["Time","الموعد"],["Details","البيانات"]];
+  return '<div class="steps">'+names.map(function(n,i){
+    var c=(i+1===st.step)?"on":(i+1<st.step?"done":"");if(st.step===5)c="done";
+    return '<div class="'+c+'">'+bi(n[0],n[1])+'</div>';
+  }).join("")+'</div>';
+}
+
+function render(){
+  var h=stepsBar()+'<div class="pane">';
+  if(st.step===1){
+    h+='<h3 class="gold">'+bi("What does your car need?","ماذا تحتاج سيارتك؟")+'</h3><div class="opts">'
+      +SERVICES.map(function(s){return '<button class="opt'+(st.service===s.id?' sel':'')+'" data-s="'+s.id+'">'+bi(s.en,s.ar)+'</button>'}).join("")
+      +'</div>';
+  }
+  if(st.step===2){
+    h+='<h3 class="gold">'+bi("Select your car brand","اختر ماركة سيارتك")+'</h3>'
+      +'<input class="search" id="q" type="search" placeholder="Search brand / ابحث عن الماركة" autocomplete="off" value="'+st.q.replace(/"/g,"&quot;")+'">'
+      +'<div class="brands" id="brands"></div>'
+      +'<label class="lbl" for="model">'+'Model and year <span class="ar">الموديل والسنة</span></label>'
+      +'<input class="field" id="model" placeholder="e.g. S-Class 2020 / مثال: S-Class 2020" value="'+st.model.replace(/"/g,"&quot;")+'">'
+      +'<div class="row"><button class="btn" id="back">'+bi("Back","رجوع")+'</button><button class="btn solid" id="next" '+(st.brand?"":"disabled")+'>'+bi("Choose a time","اختر الموعد")+'</button></div>';
+  }
+  if(st.step===3){
+    h+='<h3 class="gold">'+bi("Pick a day and time","اختر اليوم والوقت")+'</h3><div class="days" id="days"></div><div class="slots" id="slots"></div>'
+      +'<p class="note">'+bi("Times are Gulf Standard Time (UAE). We confirm your slot on WhatsApp.","التوقيت بحسب توقيت الإمارات. نؤكد موعدك عبر واتساب.")+'</p>'
+      +'<div class="row" style="justify-content:center"><button class="btn'+(st.asap?' solid':'')+'" id="asap">'+bi("Urgent? Come as soon as possible","حالة طارئة؟ تعالوا في أقرب وقت")+'</button></div>'
+      +'<div class="row"><button class="btn" id="back">'+bi("Back","رجوع")+'</button><button class="btn solid" id="next" '+((st.time||st.asap)?"":"disabled")+'>'+bi("Your details","بياناتك")+'</button></div>';
+  }
+  if(st.step===4){
+    h+='<h3 class="gold">'+bi("Where should we come?","أين نأتيك؟")+'</h3>'
+      +'<div class="sum"><b>'+svc(st.service).en+'</b> | <b>'+st.brand+(st.model?" "+st.model.replace(/</g,"&lt;"):"")+'</b> | <b>'+(st.asap?"As soon as possible":st.date+" at "+st.time)+'</b></div>'
+      +'<label class="lbl" for="nm">Your name <span class="ar">الاسم</span></label><input class="field" id="nm" autocomplete="name">'
+      +'<label class="lbl" for="ph">Your WhatsApp number <span class="ar">رقم الواتساب</span></label><input class="field" id="ph" type="tel" autocomplete="tel" placeholder="+971 5X XXX XXXX" inputmode="tel">'
+      +'<div class="two"><div><label class="lbl" for="em">Emirate <span class="ar">الإمارة</span></label><select class="field" id="em">'+EMIRATES.map(function(e){return '<option value="'+e[0]+'">'+e[0]+' - '+e[1]+'</option>'}).join("")+'</select></div>'
+      +'<div><label class="lbl" for="ar2">Area or address <span class="ar">المنطقة أو العنوان</span></label><input class="field" id="ar2" placeholder="e.g. Al Barsha, villa 12"></div></div>'
+      +'<label class="lbl" for="nt">What is the problem? (optional) <span class="ar">ما المشكلة؟ (اختياري)</span></label><textarea class="field" id="nt" rows="3"></textarea>'
+      +'<div class="err" id="err"></div>'
+      +'<div class="row"><button class="btn" id="back">'+bi("Back","رجوع")+'</button><button class="btn solid" id="send">'+bi("Send booking on WhatsApp","أرسل الحجز عبر واتساب")+'</button></div>';
+  }
+  if(st.step===5){
+    h+='<h3 class="gold">'+bi("You have booked this slot","لقد حجزت هذا الموعد")+'</h3>'
+      +'<p class="note" style="font-size:1rem;color:var(--ivory)">'+bi("Our representative will contact you as soon as possible.","سيتواصل معك ممثلنا في أقرب وقت ممكن.")+'</p>'
+      +'<div class="sum"><b>Ref: '+st.ref+'</b><br>'+svc(st.service).en+' | '+st.brand+(st.model?" "+st.model.replace(/</g,"&lt;"):"")+'<br>'+(st.asap?"As soon as possible":st.date+" at "+st.time)+'</div>'
+      +'<div class="sum" style="border-color:var(--gold);color:var(--ivory)"><b>Last step:</b> WhatsApp has opened with your booking. Press <b>Send</b> so it reaches our team.<br><span class="ar" style="text-align:start">الخطوة الأخيرة: فُتح واتساب وفيه حجزك. اضغط <b>إرسال</b> ليصل الحجز إلى فريقنا.</span></div>'
+      +'<div class="row" style="justify-content:center"><a class="btn solid" id="again" href="'+st.link+'" target="_blank" rel="noopener">'+bi("Open WhatsApp again","افتح واتساب مرة أخرى")+'</a><button class="btn" id="newbk">'+bi("Book another service","احجز خدمة أخرى")+'</button></div>';
+  }
+  h+='</div>';
+  bk.innerHTML=h;
+  wire();
+}
+
+function brandList(){
+  var q=st.q.trim().toLowerCase(),box=$("#brands");if(!box)return;
+  function match(b){return !q||b[0].toLowerCase().indexOf(q)>-1||b[1].indexOf(q)>-1}
+  var L=LUXURY.filter(match),O=OTHERS.filter(match),h="";
+  function btn(b){return '<button class="opt'+(st.brand===b[0]?' sel':'')+'" data-b="'+b[0]+'">'+bi(b[0],b[1])+'</button>'}
+  if(L.length)h+='<div class="grp">Luxury <span class="ar">الفاخرة</span></div>'+L.map(btn).join("");
+  if(O.length)h+='<div class="grp">All other brands <span class="ar">باقي الماركات</span></div>'+O.map(btn).join("");
+  if(!L.length&&!O.length)h='<div class="none">No match. Choose "Other brand" and type your car in the model box.<br>لا توجد نتيجة. اختر "ماركة أخرى" واكتب سيارتك.</div>';
+  box.innerHTML=h;
+  box.querySelectorAll("[data-b]").forEach(function(b){b.onclick=function(){
+    st.brand=b.getAttribute("data-b");
+    box.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});b.classList.add("sel");
+    $("#next").disabled=false;
+  }});
+}
+
+function dayStrip(){
+  var days=dayList(),box=$("#days");
+  var now0=uaeNow();
+  if(!st.date){var f=days.filter(function(d){return dayHasSlot(d,now0)})[0]||days[0];st.date=ymd(f)}
+  box.innerHTML=days.map(function(d){
+    var k=ymd(d);
+    return '<button class="day'+(st.date===k?' sel':'')+'" data-d="'+k+'"><small>'+d.toLocaleDateString("en-US",{weekday:"short"})+'</small><b>'+d.getDate()+'</b><small>'+d.toLocaleDateString("en-US",{month:"short"})+'</small><small style="font-family:Cairo">'+d.toLocaleDateString("ar-AE",{weekday:"short"})+'</small></button>';
+  }).join("");
+  box.querySelectorAll(".day").forEach(function(b){b.onclick=function(){st.date=b.getAttribute("data-d");st.time=null;st.asap=false;dayStrip();slotGrid();$("#next").disabled=true}});
+  slotGrid();
+}
+function slotGrid(){
+  var now=uaeNow(),h="";
+  for(var hr=OPEN_HOUR;hr<=CLOSE_HOUR;hr++){
+    var off=slotOff(st.date,hr,now);
+    h+='<button class="slot'+(off?' off':'')+((st.time===fmt(hr)&&!off)?' sel':'')+'" '+(off?'disabled':'')+' data-t="'+fmt(hr)+'">'+fmt(hr)+'</button>';
+  }
+  var box=$("#slots");box.innerHTML=h;
+  box.querySelectorAll(".slot:not(.off)").forEach(function(b){b.onclick=function(){
+    st.time=b.getAttribute("data-t");st.asap=false;slotGrid();
+    $("#next").disabled=false;$("#asap").classList.remove("solid");
+  }});
+}
+
+function wire(){
+  var back=$("#back"),next=$("#next");
+  if(back)back.onclick=function(){st.step--;render()};
+  if(next)next.onclick=function(){st.step++;render()};
+  if(st.step===1){
+    bk.querySelectorAll("[data-s]").forEach(function(b){b.onclick=function(){st.service=b.getAttribute("data-s");st.step=2;render()}});
+  }
+  if(st.step===2){
+    brandList();
+    $("#q").oninput=function(e){st.q=e.target.value;brandList()};
+    $("#model").oninput=function(e){st.model=e.target.value};
+  }
+  if(st.step===3){
+    dayStrip();
+    $("#asap").onclick=function(){st.asap=true;st.time=null;st.date=null;$("#next").disabled=false;st.step=4;render()};
+  }
+  if(st.step===4){
+    $("#send").onclick=function(){
+      var n=$("#nm").value.trim(),p=$("#ph").value.trim(),e=$("#em").value,a=$("#ar2").value.trim(),t=$("#nt").value.trim();
+      if(!n||p.replace(/\D/g,"").length<8||!a){$("#err").textContent="Please enter your name, WhatsApp number and area. / الرجاء إدخال الاسم ورقم الواتساب والمنطقة.";return}
+      st.ref="EME-"+Math.floor(1000+Math.random()*9000);
+      var m="Hello Emirates Motor Enclave, I would like to book:\n"
+       +"Booking ref: "+st.ref+"\n"
+       +"Service: "+svc(st.service).en+"\n"
+       +"Car: "+st.brand+(st.model?" "+st.model:"")+"\n"
+       +"When: "+(st.asap?"As soon as possible":st.date+" at "+st.time)+"\n"
+       +"Name: "+n+"\nWhatsApp: "+p+"\nLocation: "+a+", "+e
+       +(t?"\nProblem: "+t:"");
+      st.link=waLink(m);
+      var l=document.createElement("a");l.href=st.link;l.target="_blank";l.rel="noopener";
+      document.body.appendChild(l);l.click();document.body.removeChild(l);
+      st.step=5;render();
+      bk.scrollIntoView({behavior:"smooth"});
+    };
+  }
+  if(st.step===5){
+    $("#newbk").onclick=function(){st={step:1,service:null,brand:null,model:"",date:null,time:null,asap:false,q:""};render();bk.scrollIntoView({behavior:"smooth"})};
+  }
+}
+render();
+</script>
+</body>
+</html>
